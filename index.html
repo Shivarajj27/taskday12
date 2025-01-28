@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fieldse set</title>
+</head>
+
+<body style="background-color: #dcdcde; padding:120px;">
+    <center>
+        <fieldset style="margin:50px; background-color:#c5d9ed ;">
+            <form action="./already.html">
+                <legend style="text-align: center;">Registration Form</legend>
+                <br>
+                <label for="uname">Username</label>
+                <input type="text" name="username" id="uname" required><br>
+                <br>
+                <label for="Email">Email</label>
+                <input id="email" type="text" name="Email" pattern="[a-zA-Z0-9]+@gmail.com" required><br>
+                <br>
+                <label for="password">Password</label>
+                <input id="password" type="alphanumeric" name="password"
+                    pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9](?=.*[!@#$%^&*])(a-zA-Z0-9!@#$%^&*){8}"
+                    title="This field is mandatory" required><br>
+                
+                <br>
+                <input type="submit" value="submit" id="register" placeholder="Register" required> <a
+                    href="./already.html">login</a>
+
+                <br>
+                <br>
+                <input type="checkbox" id="cb" required>
+                <label for="cb">I Agree to the Terms and Conditons </label>
+
+            </form>
+        </fieldset>
+    </center>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <textarea cols=30 rows=23</textarea>   <form action="./task1.html" method="POST">
+        <fieldset>
+            <legend>Registration Form</legend>
+            <select name="skills" type="text">
+                <optgroup label="fe">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="JS">JS</option>
+                </optgroup>
+            </select>
+            <input list="skills"  type="text" name="hey">
+            <datalist id="skills">
+                <option value="html">html</option>
+                <option value="css">css</option>
+            </datalist>
+            <button value="submit">Submit</button>
+        </fieldset>
+    </form> -->
+</body>
+
+</html>

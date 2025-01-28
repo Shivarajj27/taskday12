@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset</title>
+</head>
+
+<body style="background-color: #dcdcde; padding:120px;">
+    <fieldset style="background-color:#c5d9ed ;">
+        <center>
+        <legend>Reset Password</legend><br>
+        <br>
+        <form action="./response.html" >
+            <label for="1">Enter Your New Password</label>
+            <input id="password" type="alphanumeric" name="password"
+                pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9](?=.*[!@#$%^&*])(a-zA-Z0-9!@#$%^&*){8}"
+                title="This field is mandatory" required><br>
+                <br>
+            <label>Confirm New Password</label>
+            <input id="password" type="password" name="password"
+                pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9](?=.*[!@#$%^&*])(a-zA-Z0-9!@#$%^&*){8}"
+                title="This field is mandatory" required><br>
+                <br>
+            <input type="submit">
+             
+        </form></center>
+    </fieldset>
+</body>
+
+</html>
